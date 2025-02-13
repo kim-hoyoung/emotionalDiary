@@ -16,3 +16,9 @@
 .DiaryList .menu_bar button {
   flex: 1;
 }
+
+.DiaryList .button_section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
