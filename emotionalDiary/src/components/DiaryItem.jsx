@@ -9,7 +9,10 @@ const DiaryItem = ({ id, emotionId, createdDate, content }) => {
   const { onDelete } = useContext(DiaryDispatchContext);
   const nav = useNavigate();
   const DeleteButton = () => {
-    onDelete(id);
+    if (window.confirm("일기를 정말 삭제할까요? 다시 복구되지 않아요!")) {
+      onDelete(id);
+    }
+    nav("/", { replace: true });
   };
   return (
     <div className="DiaryItem">
