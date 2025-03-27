@@ -34,44 +34,15 @@ React 기반 SPA 구조로 구성되어 있으며, 사용자 경험을 고려한
 
 ```
 📦src
- ┣ 📂assets
- ┃ ┣ 📜emotion1.png
- ┃ ┣ 📜emotion2.png
- ┃ ┣ 📜emotion3.png
- ┃ ┣ 📜emotion4.png
- ┃ ┗ 📜emotion5.png
- ┣ 📂components
- ┃ ┣ 📜Button.css
- ┃ ┣ 📜Buttons.jsx
- ┃ ┣ 📜DiaryItem.css
- ┃ ┣ 📜DiaryItem.jsx
- ┃ ┣ 📜DiaryList.css
- ┃ ┣ 📜DiaryList.jsx
- ┃ ┣ 📜Editor.css
- ┃ ┣ 📜Editor.jsx
- ┃ ┣ 📜EmotionItem.css
- ┃ ┣ 📜EmotionItem.jsx
- ┃ ┣ 📜Header.css
- ┃ ┣ 📜Header.jsx
- ┃ ┣ 📜Viewer.css
- ┃ ┗ 📜Viewer.jsx
- ┣ 📂hooks
- ┃ ┣ 📜useDiary.jsx
- ┃ ┗ 📜usePageTitle.jsx
- ┣ 📂pages
- ┃ ┣ 📜Diary.jsx
- ┃ ┣ 📜Edit.jsx
- ┃ ┣ 📜Home.jsx
- ┃ ┣ 📜New.jsx
- ┃ ┗ 📜Notfound.jsx
- ┣ 📂util
- ┃ ┣ 📜constants.js
- ┃ ┣ 📜get-emotion-image.js
- ┃ ┗ 📜get-stringed-date.js
- ┣ 📜App.css
- ┣ 📜App.jsx
- ┣ 📜index.css
- ┗ 📜main.jsx
+├─ 📂assets: 감정표현 이미지 리소스  
+├─ 📂components: UI 컴포넌트 (버튼, 에디터, 헤더 등)  
+├─ 📂hooks: 커스텀 훅 (useDiary, usePageTitle 등)  
+├─ 📂pages: 주요 라우트 페이지 (Home, New, Edit 등)  
+├─ 📂util: 날짜/감정 관련 유틸 함수  
+├─ 📄 App.jsx: 루트 컴포넌트  
+├─ 📄 main.jsx: 엔트리 포인트  
+├─ 📄 index.css: 전역 스타일  
+└─ 📄 App.css: 앱 스타일
 ```
 
 ---
