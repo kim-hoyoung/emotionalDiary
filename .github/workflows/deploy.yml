@@ -1,9 +1,12 @@
-nama: emotionalDairy Notification on Push
+name: emotionalDairy Notification on Push
 
 on:
   push:
-    brnachs: [main]
+    branches: [main]
 
-    jobs:
-      notify:
-        runs-on: ubuntu-latest
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Push detected on main branch!"
