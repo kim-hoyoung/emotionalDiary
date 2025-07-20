@@ -1,9 +1,0 @@
-nama: emotionalDairy Notification on Push
-
-on:
-  push:
-    brnachs: [main]
-
-    jobs:
-      notify:
-        runs-on: ubuntu-latest
