@@ -8,9 +8,9 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      name: Discord notification
-      uses: Ilshidur/action-discord@v1
-      with:
-        args: "🚀 EmotionalDairy가 main에 push 되었어요!"
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Discord notification
+        uses: Ilshidur/action-discord@v1
+        with:
+          args: "🚀 EmotionalDairy가 main에 push 되었어요!"
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
