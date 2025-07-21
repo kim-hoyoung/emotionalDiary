@@ -1,4 +1,4 @@
-name: emotionalDairy Notification on Push
+name: Discord Notification on Push
 
 on:
   push:
@@ -8,9 +8,14 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Discord notification
-        uses: Ilshidur/action-discord@v1
-        with:
-          args: "🚀 EmotionalDairy가 main에 push 되었어요!"
+      - name: Send Discord notification
+        uses: Ilshidur/action-discord@v1.0.1
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: |
+            🚀 **GitHub Push!**
+            🔗 Repo: ${{ github.repository }}
+            🙋‍♂️ Pusher: ${{ github.actor }}
+            🌿 Branch: ${{ github.ref }}
+            💬 Message: ${{ github.event.head_commit.message }}
